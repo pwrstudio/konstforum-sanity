@@ -17,21 +17,20 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/cli": "^3.0.6",
-    "@sanity/google-maps-input": "^3.0.0",
-    "@sanity/vision": "^3.0.0",
+    "@sanity/cli": "^3.1.4",
+    "@sanity/vision": "^3.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.6.0",
+    "react-icons": "^4.7.1",
     "react-is": "^18.2.0",
-    "sanity": "^3.0.0",
-    "styled-components": "^5.2.0"
+    "sanity": "^3.1.4",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^2.0.1",
-    "eslint": "^8.6.0",
-    "prettier": "^2.8.1",
-    "typescript": "^4.0.0"
+    "eslint": "^8.31.0",
+    "prettier": "^2.8.2",
+    "typescript": "^4.9.4"
   },
   "prettier": {
     "semi": false,

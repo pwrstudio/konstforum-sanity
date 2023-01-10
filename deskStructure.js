@@ -45,10 +45,10 @@ export default (S) =>
                                 .icon(MdMail)
                                 .child(
                                     S.editor()
-                                        .id("contact")
+                                        .id("kontakt")
                                         .title("contact")
                                         .schemaType("default-page")
-                                        .documentId("contact")
+                                        .documentId("kontakt")
                                 ),
                         ])
                 ),

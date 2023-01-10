@@ -139,12 +139,12 @@ export default {
             type: "text",
             group: "sve"
         },
-        {
-            title: "Koordinat",
-            name: "coordinate_sve",
-            type: "geopoint",
-            group: ["sve", "eng"]
-        },
+        // {
+        //     title: "Koordinat",
+        //     name: "coordinate_sve",
+        //     type: "geopoint",
+        //     group: ["sve", "eng"]
+        // },
         {
             title: "Epost",
             name: "emailAddress",
