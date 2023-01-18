@@ -3,17 +3,16 @@ import { Stack, Button, Card, Text } from '@sanity/ui'
 
 export const ConvertImagesInput = () => {
 
-    const IMAGE_SERVER = "https://converter.kcsyd-dev.com"
+    const IMAGE_SERVER = "https://konstforum.cygnet-service.com"
 
     const document = {
-        id: useFormValue([`_id`]),
-        type: useFormValue([`_type`])
+        id: useFormValue([`_id`])
     }
 
     let working = false;
 
     const hitServer = () => {
-        console.log(document.id + ' ' + document.type);
+        console.log(document.id);
         working = true;
 
         let myHeaders = new Headers()

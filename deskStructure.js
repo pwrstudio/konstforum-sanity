@@ -6,7 +6,8 @@ import {
     MdEvent,
     MdEdit,
     MdQuestionAnswer,
-    MdFileCopy
+    MdFileCopy,
+    MdTag
 } from "react-icons/md"
 
 export default (S) =>
@@ -88,4 +89,62 @@ export default (S) =>
                                         .params({ type: "event" }))
                         ])
                 ),
+            S.listItem()
+                .title("Kategorier")
+                .icon(MdTag)
+                .child(
+                    S.list()
+                        .title("Kategorier")
+                        .items([
+                            S.listItem()
+                                .title("Evenemang")
+                                .icon(MdTag)
+                                .child(
+                                    S.editor()
+                                        .id("categories-event")
+                                        .title("Evenemang")
+                                        .schemaType("categories")
+                                        .documentId("categories-event")
+                                ),
+                            S.listItem()
+                                .title("Konstnär")
+                                .icon(MdTag)
+                                .child(
+                                    S.editor()
+                                        .id("categories-artist")
+                                        .title("Konstnär")
+                                        .schemaType("categories")
+                                        .documentId("categories-artist")
+                                ),
+                            S.listItem()
+                                .title("Organisation")
+                                .icon(MdTag)
+                                .child(
+                                    S.editor()
+                                        .id("categories-organisation")
+                                        .title("Organisation")
+                                        .schemaType("categories")
+                                        .documentId("categories-organisation")
+                                ),
+                            S.listItem()
+                                .title("Verksam")
+                                .icon(MdTag)
+                                .child(
+                                    S.editor()
+                                        .id("categories-participant")
+                                        .title("Verksam")
+                                        .schemaType("categories")
+                                        .documentId("categories-participant")
+                                ),
+                            S.listItem()
+                                .title("Projekt")
+                                .icon(MdTag)
+                                .child(
+                                    S.editor()
+                                        .id("categoeries-project")
+                                        .title("Projekt")
+                                        .schemaType("categories")
+                                        .documentId("categoeries-project")
+                                )
+                        ]))
         ])

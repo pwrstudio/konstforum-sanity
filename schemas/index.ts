@@ -4,5 +4,6 @@ import LimitedEditor from "./Components/limitedEditor"
 import DefaultPage from "./DefaultPage";
 import Event from "./Event"
 import Post from "./Post"
+import Categories from "./Categories"
 
-export default [ImageDyad, ContentEditor, LimitedEditor, DefaultPage, Event, Post]
+export default [ImageDyad, ContentEditor, LimitedEditor, DefaultPage, Event, Post, Categories]
