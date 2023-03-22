@@ -35,6 +35,22 @@ export default {
             group: ["sve", "eng"]
         },
         {
+            title: 'Typ',
+            name: 'type',
+            type: 'string',
+            options: {
+                list: [
+                    { title: 'Evenemang', value: 'event' },
+                    { title: 'Festival', value: 'festival' },
+                    { title: 'open-call', value: 'Open call' },
+                ],
+                layout: 'radio'
+            },
+            initialValue: 'event',
+            validation: Rule => Rule.required(),
+            group: ["sve", "eng"]
+        },
+        {
             title: "Titel (SVE)",
             name: "title",
             type: "string",
@@ -87,8 +103,14 @@ export default {
             group: "eng"
         },
         {
-            title: "Tid och datum",
+            title: "Tid och datum (start)",
             name: "time",
+            type: "datetime",
+            group: ["sve", "eng"]
+        },
+        {
+            title: "Tid och datum (slut)",
+            name: "timeEnd",
             type: "datetime",
             group: ["sve", "eng"]
         },
