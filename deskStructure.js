@@ -4,7 +4,7 @@ import {
     MdHome,
     MdMail,
     MdEvent,
-    MdEdit,
+    MdNewspaper,
     MdQuestionAnswer,
     MdFileCopy,
     MdTag
@@ -87,6 +87,24 @@ export default (S) =>
                                         .showIcons(true)
                                         .filter("_type == $type")
                                         .params({ type: "event" }))
+                        ])
+                ),
+            S.listItem()
+                .title("Nyheter")
+                .icon(MdNewspaper)
+                .child(
+                    S.list()
+                        .title("Evenemang")
+                        .items([
+                            S.listItem()
+                                .title("Alla nyheter")
+                                .icon(MdNewspaper)
+                                .child(
+                                    S.documentList()
+                                        .title('Alla nyheter')
+                                        .showIcons(true)
+                                        .filter("_type == $type")
+                                        .params({ type: "news" }))
                         ])
                 ),
             S.listItem()

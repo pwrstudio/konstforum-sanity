@@ -5,5 +5,6 @@ import DefaultPage from "./DefaultPage";
 import Event from "./Event"
 import Post from "./Post"
 import Categories from "./Categories"
+import News from "./News";
 
-export default [ImageDyad, ContentEditor, LimitedEditor, DefaultPage, Event, Post, Categories]
+export default [ImageDyad, ContentEditor, LimitedEditor, DefaultPage, Event, Post, Categories, News]
