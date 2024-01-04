@@ -44,7 +44,6 @@ export default {
             name: "intor_eng",
             type: "contentEditor",
         },
-
         {
             title: "Huvudbild",
             name: "mainImage",

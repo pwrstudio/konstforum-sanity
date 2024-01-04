@@ -7,7 +7,8 @@ import {
     MdNewspaper,
     MdQuestionAnswer,
     MdFileCopy,
-    MdTag
+    MdTag,
+    MdBookmarkAdd
 } from "react-icons/md"
 
 export default (S) =>
@@ -105,6 +106,24 @@ export default (S) =>
                                         .showIcons(true)
                                         .filter("_type == $type")
                                         .params({ type: "news" }))
+                        ])
+                ),
+            S.listItem()
+                .title("Anslagstavla")
+                .icon(MdBookmarkAdd)
+                .child(
+                    S.list()
+                        .title("Anslagstavla")
+                        .items([
+                            S.listItem()
+                                .title("Alla anslag")
+                                .icon(MdBookmarkAdd)
+                                .child(
+                                    S.documentList()
+                                        .title('Alla anslag')
+                                        .showIcons(true)
+                                        .filter("_type == $type")
+                                        .params({ type: "anslag" }))
                         ])
                 ),
             S.listItem()

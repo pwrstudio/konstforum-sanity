@@ -6,5 +6,6 @@ import Event from "./Event"
 import Post from "./Post"
 import Categories from "./Categories"
 import News from "./News";
+import Anslag from "./Anslag";
 
-export default [ImageDyad, ContentEditor, LimitedEditor, DefaultPage, Event, Post, Categories, News]
+export default [ImageDyad, ContentEditor, LimitedEditor, DefaultPage, Event, Anslag, Post, Categories, News]
