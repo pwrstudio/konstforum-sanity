@@ -1,3 +1,4 @@
+import { MdImage, MdVideoLibrary } from 'react-icons/md'
 import { normal, title, small } from './renderers'
 
 export default {
@@ -53,7 +54,32 @@ export default {
                 },
                 {
                     type: 'image',
+                    icon: MdImage,
                     fields: [
+                        {
+                            name: 'bildtext_sve',
+                            type: 'string',
+                            title: 'Bildtext (SVE)',
+                        },
+                        {
+                            name: 'caption_eng',
+                            type: 'string',
+                            title: 'Bildtext (ENG)',
+                        },
+                    ]
+                },
+                {
+                    type: 'object',
+                    name: 'video',
+                    title: 'Video',
+                    icon: MdVideoLibrary,
+                    fields: [
+                        {
+                            name: 'url',
+                            type: 'url',
+                            title: 'URL',
+                            description: "Youtube eller vimeo. T.ex. https://www.youtube.com/watch?v=GAKetEPZb8c"
+                        },
                         {
                             name: 'bildtext_sve',
                             type: 'string',
