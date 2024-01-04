@@ -85,16 +85,6 @@ export default {
                             name: "posterImage",
                             type: "image",
                         },
-                        {
-                            name: 'bildtext_sve',
-                            type: 'string',
-                            title: 'Bildtext (SVE)',
-                        },
-                        {
-                            name: 'caption_eng',
-                            type: 'string',
-                            title: 'Bildtext (ENG)',
-                        },
                     ]
                 },
             ]
