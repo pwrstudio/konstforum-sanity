@@ -81,6 +81,11 @@ export default {
                             description: "Youtube eller vimeo. T.ex. https://www.youtube.com/watch?v=GAKetEPZb8c"
                         },
                         {
+                            title: "Posterbild",
+                            name: "posterImage",
+                            type: "image",
+                        },
+                        {
                             name: 'bildtext_sve',
                             type: 'string',
                             title: 'Bildtext (SVE)',

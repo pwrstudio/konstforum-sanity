@@ -17,14 +17,14 @@ export default {
             title: "Titel (SVE)",
             name: "title",
             type: "string",
-            validation: Rule => Rule.required(),
+            validation: (Rule: any) => Rule.required(),
             group: "sve"
         },
         {
             title: "Titel (ENG)",
             name: "title_eng",
             type: "string",
-            validation: Rule => Rule.required(),
+            validation: (Rule: any) => Rule.required(),
             group: "eng"
         },
         {
