@@ -3,7 +3,7 @@ import { Stack, Button, Card, Text } from '@sanity/ui'
 
 export const ConvertImagesInput = () => {
 
-    const IMAGE_SERVER = "https://konstforum.cygnet-service.com"
+    const IMAGE_SERVER = "https://dither.rttskr.com"
 
     const document = {
         id: useFormValue([`_id`])
